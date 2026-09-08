@@ -16,7 +16,6 @@ from pages import contact
 
 BASE_URL = "https://www.dharwadhubballitutor.com/"
 
-
 def test_contact_page_displays_enquiry_form(page: Page) -> None:
     page.goto(BASE_URL, wait_until="domcontentloaded")
     page.get_by_role("link", name="Contact", exact=True).click()
@@ -137,3 +136,20 @@ def test_services_page_displays_services_catalogue(page: Page) -> None:
     expect(
         page.get_by_role("heading", name="Our Most Popular Courses")
     ).to_be_visible()        
+
+def test_alumni_page_displays_alumni_catalogue(page: Page) -> None:
+    page.goto(BASE_URL, wait_until="domcontentloaded")
+    page.get_by_role("link", name="Alumni", exact=True).click()
+
+    expect(
+        page.get_by_role("heading", name="Our Alumni Work At")
+    ).to_be_visible()
+
+def test_projects_page_displays_projects_catalogue(page: Page) -> None:
+    page.goto(BASE_URL, wait_until="domcontentloaded")
+    page.get_by_role("link", name="Projects", exact=True).click()
+
+    expect(
+        page.get_by_role("heading", name="Our Projects")
+    ).to_be_visible()        
+    
