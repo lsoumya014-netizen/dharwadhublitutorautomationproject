@@ -1,0 +1,9 @@
+{
+  "test_alumni_section": {
+    "expected_heading": "Our Alumni Work At",
+    "companies": [
+      "TVG Agency",
+      "Ken Gen"
+    ]
+  }
+}

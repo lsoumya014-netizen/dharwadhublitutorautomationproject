@@ -1,15 +1,18 @@
+"""LMS login page object."""
+
+from playwright.sync_api import Page
+
+
 class LMSPage:
-    def __init__(self, page):
+    """Page Object for LMS Login Page."""
+
+    def __init__(self, page: Page):
         self.page = page
-        self.title = "LMS Page"
-        self.url = "https://www.dharwadhubballitutor.com/"
-        self.lms_login_link = page.get_by_role("link", name="LMS Login")
+        self.url = "https://dharwadhubballitutor.com/lms/views/login.php"
         self.welcome_back_heading = page.get_by_role("heading", name="Welcome Back")
-        self.logo_img = page.get_by_role("img", name="DharwadHubballiTutor Logo")
         self.dharwadhubballitutor_heading = page.get_by_role("heading", name="DharwadHubballiTutor")
-        self.empowering_text = page.get_by_text("Empowering the next")
         self.sign_in_with_google_link = page.get_by_role("link", name="Sign in with Google")
-        self.sign_in_heading = page.get_by_role("heading", name="Sign in")
-        self.email_or_phone_input = page.get_by_role("textbox", name="Email or phone")
-        self.next_button = page.get_by_role("button", name="Next")
-        self.try_again_link = page.get_by_role("link", name="Try again")
+
+    def navigate(self) -> None:
+        """Navigate to the LMS login page."""
+        self.page.goto(self.url, wait_until="domcontentloaded")

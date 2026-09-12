@@ -1,0 +1,8 @@
+{
+  "test_workshops_catalogue": {
+    "program_heading": "Workshops",
+    "explore_button_index": 4,
+    "featured_workshop_name": "Python with Machine Learning Workshop",
+    "expected_heading": "Workshop Modules"
+  }
+}

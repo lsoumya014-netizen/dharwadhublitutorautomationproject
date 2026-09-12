@@ -1,0 +1,8 @@
+{
+  "test_trainings_catalogue": {
+    "program_heading": "Trainings",
+    "explore_button_index": 0,
+    "featured_course_keyword": "Full Stack",
+    "expected_text": "Explore our programs"
+  }
+}

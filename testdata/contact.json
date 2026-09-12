@@ -1,0 +1,23 @@
+{
+  "test_enquiry_form": {
+    "name": "Alex Johnson",
+    "email": "alex.johnson@example.com",
+    "mobile_number": "9876543210",
+    "training": "Full Stack Web Development",
+    "expected_branches": [
+      "Dharwad Branch",
+      "Hubballi Branch",
+      "Belagavi Branch"
+    ]
+  },
+  "test_contact_info": {
+    "call_phone_1": "+91 97412 37334",
+    "call_phone_2": "+91 80079 61759",
+    "email_address": "info@dharwadhubballitutor.com",
+    "locations": [
+      "Dharwad",
+      "Hubballi",
+      "Belagavi"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "test_placement_stories": {
+    "nav_link": "Placements",
+    "expected_heading": "Our Amazing Placement Stories",
+    "placed_students": [
+      "Sukhavindersingh Thakur"
+    ]
+  }
+}

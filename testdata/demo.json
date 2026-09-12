@@ -1,0 +1,18 @@
+{
+  "test_book_demo_valid": {
+    "name": "Sarah Connor",
+    "email": "sarah.connor@example.com",
+    "mobile_number": "9123456780",
+    "demo_class": "Full Stack Web Development",
+    "button_name": "Book Demo",
+    "submit_button_name": "Submit"
+  },
+  "test_book_demo_data_analytics": {
+    "name": "Rahul Patil",
+    "email": "rahul.patil@example.com",
+    "mobile_number": "9988776655",
+    "demo_class": "Data Analytics",
+    "button_name": "Book Demo",
+    "submit_button_name": "Submit"
+  }
+}

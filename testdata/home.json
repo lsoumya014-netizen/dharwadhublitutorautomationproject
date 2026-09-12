@@ -1,0 +1,18 @@
+{
+  "test_home_metadata": {
+    "title_keyword": "DharwadHubballiTutor",
+    "programs_heading": "Discover Our Programs",
+    "popular_courses_heading": "Our Most Popular Courses",
+    "live_projects_heading": "Our Live Projects",
+    "alumni_heading": "Our Alumni Work At",
+    "accreditations_heading": "Our Official Accreditations"
+  },
+  "test_home_programs": [
+    { "name": "Trainings", "index": 0 },
+    { "name": "Internships", "index": 1 },
+    { "name": "Services", "index": 2 },
+    { "name": "Jobs", "index": 3 },
+    { "name": "Workshops", "index": 4 },
+    { "name": "Blogs", "index": 5 }
+  ]
+}

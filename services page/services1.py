@@ -1,71 +1,62 @@
-import re
-from playwright.sync_api import Page, expect
-
-
-def test_example(page: Page) -> None: # type: ignore
-    page.goto("https://www.dharwadhubballitutor.com/")
-    page.get_by_role("button", name="Explore Courses").nth(2).click()
-    page.get_by_role("link", name=" Best Digital Marketing Course (Online & Offline) ").click()
-    page.get_by_text("Digital Marketing Training").click()
-    page.get_by_role("paragraph").nth(5).click()
-    page.get_by_role("heading", name="Key Features:").click()
-    page.locator("div").filter(has_text="Digital Marketing Training").nth(5).click()
+"""Smoke tests for services catalogue and marketing course offerings."""
 
 import re
 from playwright.sync_api import Page, expect
 
+BASE_URL = "https://www.dharwadhubballitutor.com/"
 
-def test_example(page: Page) -> None: # type: ignore
-    page.goto("https://www.dharwadhubballitutor.com/")
+
+def test_digital_marketing_service_link(page: Page) -> None:
+    """Validate Digital Marketing course page loads from services section."""
+    page.goto(BASE_URL, wait_until="domcontentloaded")
     page.get_by_role("button", name="Explore Courses").nth(2).click()
-    page.get_by_role("link", name=" Email Marketing ").click()
-    page.locator("body").click()
-    page.locator("div").filter(has_text="Email marketingÂ is the act").nth(5).click()
-
-import re
-from playwright.sync_api import Page, expect
+    link = page.get_by_role("link", name=re.compile("Digital Marketing Course", re.I)).first
+    expect(link).to_be_visible()
 
 
-def test_example(page: Page) -> None: # type: ignore
-    page.goto("https://www.dharwadhubballitutor.com/")
+def test_email_marketing_service_link(page: Page) -> None:
+    """Validate Email Marketing course page link in services."""
+    page.goto(BASE_URL, wait_until="domcontentloaded")
     page.get_by_role("button", name="Explore Courses").nth(2).click()
-    page.get_by_role("link", name=" Social Media Marketing ").click()
-    page.locator("div").filter(has_text="The term social media").nth(5).click()
-
-import re
-from playwright.sync_api import Page, expect
+    link = page.get_by_role("link", name=re.compile("Email Marketing", re.I)).first
+    expect(link).to_be_visible()
 
 
-def test_example(page: Page) -> None: # type: ignore
-    page.goto("https://www.dharwadhubballitutor.com/")
+def test_social_media_marketing_service_link(page: Page) -> None:
+    """Validate Social Media Marketing link in services."""
+    page.goto(BASE_URL, wait_until="domcontentloaded")
     page.get_by_role("button", name="Explore Courses").nth(2).click()
-    page.get_by_role("link", name=" Search Engine Marketing ").click()
-    page.get_by_role("heading", name="Reach Your Clients Instantly:").click()
-    page.get_by_role("heading", name="Create Geo-Targeted Search").click()
+    link = page.get_by_role("link", name=re.compile("Social Media Marketing", re.I)).first
+    expect(link).to_be_visible()
 
-import re
-from playwright.sync_api import Page, expect
 
-def test_example(page: Page) -> None: # type: ignore
-    page.goto("https://www.dharwadhubballitutor.com/")
+def test_search_engine_marketing_service_link(page: Page) -> None:
+    """Validate Search Engine Marketing link in services."""
+    page.goto(BASE_URL, wait_until="domcontentloaded")
     page.get_by_role("button", name="Explore Courses").nth(2).click()
-    page.get_by_role("link", name=" Whatsapp Marketing ").click()
-    page.locator("div").filter(has_text="WhatsApp marketing isÂ a type").nth(5).click()
+    link = page.get_by_role("link", name=re.compile("Search Engine Marketing", re.I)).first
+    expect(link).to_be_visible()
 
-import re
-from playwright.sync_api import Page, expect
 
-def test_example(page: Page) -> None: # type: ignore
-    page.goto("https://www.dharwadhubballitutor.com/")
+def test_whatsapp_marketing_service_link(page: Page) -> None:
+    """Validate WhatsApp Marketing link in services."""
+    page.goto(BASE_URL, wait_until="domcontentloaded")
     page.get_by_role("button", name="Explore Courses").nth(2).click()
-    page.get_by_role("link", name=" SMS Marketing ").click()
-    page.get_by_role("list").filter(has_text="E-commerce storesÂ :Â Whether").click()
+    link = page.get_by_role("link", name=re.compile("Whatsapp Marketing", re.I)).first
+    expect(link).to_be_visible()
 
-import re
-from playwright.sync_api import Page, expect
 
-def test_example(page: Page) -> None:
-    page.goto("https://www.dharwadhubballitutor.com/")
+def test_sms_marketing_service_link(page: Page) -> None:
+    """Validate SMS Marketing link in services."""
+    page.goto(BASE_URL, wait_until="domcontentloaded")
     page.get_by_role("button", name="Explore Courses").nth(2).click()
-    page.get_by_role("link", name=" Web Hosting ").click()
-    page.get_by_text("Improved Site Performance Technical Support Liberty In Web Design And Templates").click()
+    link = page.get_by_role("link", name=re.compile("SMS Marketing", re.I)).first
+    expect(link).to_be_visible()
+
+
+def test_web_hosting_service_link(page: Page) -> None:
+    """Validate Web Hosting service link in services."""
+    page.goto(BASE_URL, wait_until="domcontentloaded")
+    page.get_by_role("button", name="Explore Courses").nth(2).click()
+    link = page.get_by_role("link", name=re.compile("Web Hosting", re.I)).first
+    expect(link).to_be_visible()

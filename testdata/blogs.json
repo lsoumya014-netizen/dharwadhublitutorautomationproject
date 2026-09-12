@@ -1,0 +1,8 @@
+{
+  "test_blogs_catalogue": {
+    "program_heading": "Blogs",
+    "explore_button_index": 5,
+    "featured_blog_name": "Digital Marketing Course",
+    "expected_section": "Our Most Popular Courses"
+  }
+}

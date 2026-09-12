@@ -1,0 +1,31 @@
+{
+  "test_projects_section": {
+    "expected_heading": "Our Live Projects",
+    "projects": [
+      {
+        "title": "NWKRTC – BI Dashboard",
+        "category": "Public Transport Analytics"
+      },
+      {
+        "title": "ACE DECORS – ERP Application",
+        "category": "ERP System"
+      },
+      {
+        "title": "RECON – Event Analytics Platform",
+        "category": "Event Analytics"
+      },
+      {
+        "title": "Oxford Coaching – Dynamic Web App",
+        "category": "Education Technology"
+      },
+      {
+        "title": "Angadi Coaching – Web Application",
+        "category": "Education Technology"
+      },
+      {
+        "title": "Anjuman BCA & BBA Institute",
+        "category": "College Management"
+      }
+    ]
+  }
+}

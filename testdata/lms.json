@@ -1,0 +1,8 @@
+{
+  "test_lms_navigation": {
+    "nav_link": "LMS",
+    "expected_url_pattern": "**/lms/views/login.php**",
+    "expected_title": "Welcome | DharwadHubballiTutor LMS",
+    "expected_heading": "Welcome Back"
+  }
+}

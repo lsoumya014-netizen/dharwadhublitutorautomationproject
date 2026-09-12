@@ -1,0 +1,9 @@
+{
+  "test_jobs_catalogue": {
+    "program_heading": "Jobs",
+    "explore_button_index": 3,
+    "featured_course_name": "Software Testing Course",
+    "expected_heading": "Software Testing Course",
+    "expected_section": "Tools Covered:"
+  }
+}

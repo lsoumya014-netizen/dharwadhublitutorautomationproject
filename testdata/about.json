@@ -1,8 +1,11 @@
 {
-    "test1":{
-        "link": "/about",
-        "name": "About",
-        "heading": "About Dharwad Hubli Tutor",
-        "text": "Dharwad Hubli Tutor is a platform that connects students with qualified tutors in the Dharwad and Hubli regions. Our mission is to provide personalized learning experiences that cater to the unique needs of each student."
-    }
+  "test_about_page": {
+    "nav_link": "About",
+    "expected_heading": "About DharwadHubballiTutor",
+    "expertise_heading": "Our Expertise",
+    "vision_heading": "Our Vision",
+    "mission_heading": "Our Mission",
+    "values_heading": "Core Values",
+    "governance_heading": "Governance Philosophy"
+  }
 }
